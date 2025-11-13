@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_event_sale
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_event_sale/data/files/events_dashboard.json:0
 #, python-format
 msgid "Attendees"
-msgstr "Người tham dự"
+msgstr "Người Tham dự"
 
 #. module: spreadsheet_dashboard_event_sale
 #. odoo-javascript
@@ -108,7 +108,7 @@ msgstr "Marketing"
 #: code:addons/spreadsheet_dashboard_event_sale/data/files/events_dashboard.json:0
 #, python-format
 msgid "Organizer"
-msgstr "Đơn vị tổ chức"
+msgstr "Nhà Tổ chức"
 
 #. module: spreadsheet_dashboard_event_sale
 #. odoo-javascript
@@ -167,7 +167,7 @@ msgstr "Đơn vị tổ chức tiêu biểu"
 #: code:addons/spreadsheet_dashboard_event_sale/data/files/events_dashboard.json:0
 #, python-format
 msgid "Top Tags"
-msgstr "Thẻ tiêu biểu"
+msgstr "Thẻ hàng đầu"
 
 #. module: spreadsheet_dashboard_event_sale
 #. odoo-javascript

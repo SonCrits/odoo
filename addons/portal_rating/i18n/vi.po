@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* portal_rating
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# Thi Huong Nguyen, 2024
+# Thi Huong Nguyen, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-26 21:55+0000\n"
+"POT-Creation-Date: 2025-05-09 20:37+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,12 +60,12 @@ msgstr "Bình luận"
 #. module: portal_rating
 #: model:ir.model.fields,field_description:portal_rating.field_rating_rating__publisher_id
 msgid "Commented by"
-msgstr "Commented by"
+msgstr "Bình luận bởi"
 
 #. module: portal_rating
 #: model:ir.model.fields,field_description:portal_rating.field_rating_rating__publisher_datetime
 msgid "Commented on"
-msgstr "Commented on"
+msgstr "Bình luận vào"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -86,7 +86,7 @@ msgstr "Chi tiết"
 #: code:addons/portal_rating/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Edit"
-msgstr "Chỉnh sửa"
+msgstr "Sửa"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -94,21 +94,21 @@ msgstr "Chỉnh sửa"
 #: model_terms:ir.ui.view,arch_db:portal_rating.rating_stars_static_popup_composer
 #, python-format
 msgid "Edit Review"
-msgstr ""
+msgstr "Chỉnh sửa review"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "Empty star"
-msgstr ""
+msgstr "Không sao"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "Full star"
-msgstr ""
+msgstr "Đủ sao"
 
 #. module: portal_rating
 #: model:ir.model,name:portal_rating.model_ir_http
@@ -120,49 +120,49 @@ msgstr "Định tuyến HTTP"
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "Half a star"
-msgstr "Half a star"
+msgstr "Nửa sao"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_composer.js:0
 #, python-format
 msgid "I don't like it"
-msgstr "Tôi không thích nó"
+msgstr "Tôi không thích"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_composer.js:0
 #, python-format
 msgid "I hate it"
-msgstr "Tôi ghét nó"
+msgstr "Tôi ghét"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_composer.js:0
 #, python-format
 msgid "I like it"
-msgstr "Tôi thích nó"
+msgstr "Tôi thích"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_composer.js:0
 #, python-format
 msgid "I love it"
-msgstr "Tôi thật sự yêu thích nó"
+msgstr "Tôi thật sự yêu thích"
 
 #. module: portal_rating
 #. odoo-python
 #: code:addons/portal_rating/controllers/portal_rating.py:0
 #, python-format
 msgid "Invalid rating"
-msgstr "Invalid rating"
+msgstr "Đánh giá không hợp lệ"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_composer.js:0
 #, python-format
 msgid "It's okay"
-msgstr "Nó cũng được"
+msgstr "Cũng được"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -174,40 +174,40 @@ msgstr "Đang tải..."
 #. module: portal_rating
 #: model:ir.model,name:portal_rating.model_mail_message
 msgid "Message"
-msgstr "Tin nhắn"
+msgstr "Thông báo"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_rating_composer.xml:0
 #, python-format
 msgid "Modify your review"
-msgstr "Modify your review"
+msgstr "Sửa lại đánh giá của bạn"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Post comment"
-msgstr "Post comment"
+msgstr "Gửi bình luận"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "Progress bar"
-msgstr "Thanh tiến trình"
+msgstr "Thanh tiến độ"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Published on"
-msgstr "Published on"
+msgstr "Xuất bản vào"
 
 #. module: portal_rating
 #: model:ir.model.fields,field_description:portal_rating.field_rating_rating__publisher_comment
 msgid "Publisher comment"
-msgstr "Publisher comment"
+msgstr "Bình luận của nhà xuất bản"
 
 #. module: portal_rating
 #: model:ir.model,name:portal_rating.model_rating_rating
@@ -219,7 +219,7 @@ msgstr "Đánh giá"
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "Remove Selection"
-msgstr "Remove Selection"
+msgstr "Bỏ lựa chọn"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -227,7 +227,7 @@ msgstr "Remove Selection"
 #: model_terms:ir.ui.view,arch_db:portal_rating.rating_stars_static_popup_composer
 #, python-format
 msgid "Review"
-msgstr "Xem trước"
+msgstr "Rà soát"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -237,13 +237,14 @@ msgid ""
 "The rating is required. Please make sure to select one before sending your "
 "review."
 msgstr ""
+"Đánh giá là bắt buộc. Hãy nhớ đánh giá trước khi gửi nhận xét của bạn."
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Update comment"
-msgstr "Update comment"
+msgstr "Cập nhật bình luận"
 
 #. module: portal_rating
 #. odoo-python
@@ -251,20 +252,21 @@ msgstr "Update comment"
 #, python-format
 msgid "Updating rating comment require write access on related record"
 msgstr ""
+"Cần có quyền truy cập vào bản ghi liên quan để cập nhật nhận xét đánh giá."
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/xml/portal_rating_composer.xml:0
 #, python-format
 msgid "Write a review"
-msgstr ""
+msgstr "Viết một review"
 
 #. module: portal_rating
 #. odoo-javascript
 #: code:addons/portal_rating/static/src/js/portal_chatter.js:0
 #, python-format
 msgid "Write your comment"
-msgstr "Write your comment"
+msgstr "Viết bình luận"
 
 #. module: portal_rating
 #. odoo-javascript
@@ -279,4 +281,4 @@ msgstr "ảnh đại diện"
 #: code:addons/portal_rating/static/src/xml/portal_tools.xml:0
 #, python-format
 msgid "stars"
-msgstr "ngôi sao"
+msgstr "sao"

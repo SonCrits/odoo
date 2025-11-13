@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_hr_timesheet
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -32,7 +32,7 @@ msgstr "ngày"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Assignee"
-msgstr "Người được phân công"
+msgstr "Người nhận"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. odoo-javascript
@@ -101,7 +101,7 @@ msgstr "KPI"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Period"
-msgstr "Giai đoạn"
+msgstr "Chu kỳ"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. odoo-javascript
@@ -228,7 +228,7 @@ msgstr "Dự án tiêu biểu"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Top Tags"
-msgstr "Thẻ tiêu biểu"
+msgstr "Thẻ hàng đầu"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. odoo-javascript
@@ -250,11 +250,11 @@ msgstr "kể từ giai đoạn trước"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "stats - current"
-msgstr "thống kê - hiện tại"
+msgstr "số liệu thống kê - hiện tại"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "stats - previous"
-msgstr "thống kê - trước đó"
+msgstr "số liệu thống kê - trước đó"

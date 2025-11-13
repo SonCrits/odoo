@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_website_sale_slides
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_website_sale_slides/data/files/elearning_dashboard.json:0
 #, python-format
 msgid "Attendees"
-msgstr "Người tham dự"
+msgstr "Người Tham dự"
 
 #. module: spreadsheet_dashboard_website_sale_slides
 #. odoo-javascript
@@ -63,7 +63,7 @@ msgstr "Hiện tại"
 #: code:addons/spreadsheet_dashboard_website_sale_slides/data/files/elearning_dashboard.json:0
 #, python-format
 msgid "Period"
-msgstr "Kỳ"
+msgstr "Chu kỳ"
 
 #. module: spreadsheet_dashboard_website_sale_slides
 #. odoo-javascript
@@ -163,4 +163,4 @@ msgstr "doanh thu - trước đó"
 #: code:addons/spreadsheet_dashboard_website_sale_slides/data/files/elearning_dashboard.json:0
 #, python-format
 msgid "since last period"
-msgstr "kể từ kỳ trước"
+msgstr "kể từ giai đoạn trước"

@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* web_tour
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# Thi Huong Nguyen, 2023
-# 
+# Thi Huong Nguyen, 2024
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:56+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "Đóng"
 #. module: web_tour
 #: model:ir.model.fields,field_description:web_tour.field_web_tour_tour__user_id
 msgid "Consumed by"
-msgstr "Consumed by"
+msgstr "Được tiêu thụ bởi"
 
 #. module: web_tour
 #. odoo-javascript
@@ -74,7 +74,7 @@ msgstr "ID"
 #. module: web_tour
 #: model_terms:ir.ui.view,arch_db:web_tour.edit_tour_list
 msgid "Menu"
-msgstr "Menu"
+msgstr "Trình đơn"
 
 #. module: web_tour
 #. odoo-javascript
@@ -88,7 +88,7 @@ msgstr "Tên"
 #: code:addons/web_tour/static/src/debug/tour_dialog_component.xml:0
 #, python-format
 msgid "Onboarding tours"
-msgstr ""
+msgstr "Tour hướng dẫn"
 
 #. module: web_tour
 #. odoo-javascript
@@ -109,14 +109,14 @@ msgstr "Đường dẫn"
 #: code:addons/web_tour/static/src/tour_service/tour_pointer_state.js:0
 #, python-format
 msgid "Scroll down to reach the next step."
-msgstr ""
+msgstr "Cuộn xuống để đến bước tiếp theo."
 
 #. module: web_tour
 #. odoo-javascript
 #: code:addons/web_tour/static/src/tour_service/tour_pointer_state.js:0
 #, python-format
 msgid "Scroll up to reach the next step."
-msgstr ""
+msgstr "Cuộn lên để đến bước tiếp theo."
 
 #. module: web_tour
 #. odoo-javascript
@@ -130,7 +130,7 @@ msgstr "Trình tự"
 #: code:addons/web_tour/static/src/debug/tour_dialog_component.xml:0
 #, python-format
 msgid "Start"
-msgstr "Bắt đầu"
+msgstr "Khởi động"
 
 #. module: web_tour
 #. odoo-javascript
@@ -167,17 +167,17 @@ msgstr "Test tour"
 #: code:addons/web_tour/static/src/debug/tour_dialog_component.xml:0
 #, python-format
 msgid "Testing tours"
-msgstr ""
+msgstr "Tour kiểm thử"
 
 #. module: web_tour
 #: model_terms:ir.ui.view,arch_db:web_tour.edit_tour_search
 msgid "Tip"
-msgstr "Tiền tip"
+msgstr "Lời khuyên"
 
 #. module: web_tour
 #: model:ir.model.fields,field_description:web_tour.field_web_tour_tour__name
 msgid "Tour name"
-msgstr "Tour name"
+msgstr "Tên tour"
 
 #. module: web_tour
 #. odoo-javascript
@@ -187,4 +187,4 @@ msgstr "Tour name"
 #: model:ir.ui.menu,name:web_tour.menu_tour_action
 #, python-format
 msgid "Tours"
-msgstr "Du lịch"
+msgstr "Tham quan"

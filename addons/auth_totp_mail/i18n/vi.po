@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* auth_totp_mail
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -95,7 +95,7 @@ msgstr "Thiết bị xác thực"
 #. module: auth_totp_mail
 #: model:mail.template,subject:auth_totp_mail.mail_template_totp_invite
 msgid "Invitation to activate two-factor authentication on your Odoo account"
-msgstr "Lời mời kích hoạt xác thực hai yếu tố trên tài khoản Odoo của bạn"
+msgstr "Lời mời kích hoạt xác thực hai yếu tố trên tài khoản của bạn"
 
 #. module: auth_totp_mail
 #. odoo-python

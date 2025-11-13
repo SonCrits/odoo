@@ -1,17 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_links
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+# Thi Huong Nguyen, 2024
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:56+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,21 +25,21 @@ msgstr ""
 #: code:addons/website_links/static/src/js/website_links_charts.js:0
 #, python-format
 msgid " clicks"
-msgstr "bấm chuột"
+msgstr " click"
 
 #. module: website_links
 #. odoo-javascript
 #: code:addons/website_links/static/src/js/website_links_charts.js:0
 #, python-format
 msgid " countries"
-msgstr "quốc gia"
+msgstr " quốc gia"
 
 #. module: website_links
 #. odoo-javascript
 #: code:addons/website_links/static/src/js/website_links_charts.js:0
 #, python-format
 msgid "# of clicks"
-msgstr "Số lần bấm chuột"
+msgstr "SL click"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
@@ -48,12 +49,12 @@ msgstr "<strong>Chiến dịch</strong>"
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 msgid "<strong>Medium</strong>"
-msgstr "<strong>Trung bình</strong>"
+msgstr "<strong>Phương thức</strong>"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 msgid "<strong>Original URL</strong>"
-msgstr "<strong>Liên kết ban đầu</strong>"
+msgstr "<strong>URL gốc</strong>"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
@@ -68,7 +69,7 @@ msgstr "<strong>Nguồn</strong>"
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 msgid "<strong>Tracked Link</strong>"
-msgstr "<strong>Liên kết theo dõi</strong>"
+msgstr "<strong>Link được theo vết</strong>"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
@@ -83,6 +84,10 @@ msgid ""
 "the context of your link. It might be an event you want to promote or a "
 "special promotion.\"/>"
 msgstr ""
+"Chiến dịch <i class=\"fa fa-info-circle\" data-bs-toggle=\"tooltip\" data-"
+"bs-placement=\"top\" role=\"img\" aria-label=\"Thông tin tooltip\" "
+"title=\"Xác định ngữ cảnh của liên kết. Đó có thể là sự kiện bạn muốn quảng "
+"bá hoặc một chương trình khuyến mại đặc biệt. \"/>"
 
 #. module: website_links
 #. odoo-javascript
@@ -118,7 +123,7 @@ msgstr "Tạo liên kết..."
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid "Get tracked link"
-msgstr "Lấy liên kết theo dõi"
+msgstr "Lấy liên kết theo vết"
 
 #. module: website_links
 #. odoo-javascript
@@ -143,7 +148,7 @@ msgstr "Tuần trước"
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 msgid "Link Tracker"
-msgstr "Trình theo dõi Liên kết"
+msgstr "Theo dõi link"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
@@ -153,11 +158,15 @@ msgid ""
 "the medium used to share your link. It might be an email, or a Facebook Ads "
 "for instance.\"/>"
 msgstr ""
+"Phương tiện <i class=\"fa fa-info-circle\" data-bs-toggle=\"tooltip\" data-"
+"bs-placement=\"top\" role=\"img\" aria-label=\"Tooltip info\" title=\"Xác "
+"định phương tiện sử dụng để chia sẻ liên kết. Đó có thể là email hay hoặc "
+"bài quảng cáo trên Facebook.\"/>"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid "Most Clicked"
-msgstr "Được bấm chuột nhiều nhất"
+msgstr "Click nhiều nhất"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
@@ -169,7 +178,7 @@ msgstr "Mới nhất"
 #: code:addons/website_links/static/src/js/website_links_charts.js:0
 #, python-format
 msgid "No data"
-msgstr "Không có dữ liệu"
+msgstr "không có dữ liệu"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
@@ -193,6 +202,9 @@ msgid ""
 "the source from which your traffic will come from, Facebook or Twitter for "
 "instance.\"/>"
 msgstr ""
+"Nguồn <i class=\"fa fa-info-circle\" data-bs-toggle=\"tooltip\" data-bs-"
+"placement=\"top\" role=\"img\" aria-label=\"Tooltip info\" title=\"Xác định "
+"nguồn của lưu lượng truy cập, ví dụ như Facebook hoặc Twitter. \"/>"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
@@ -239,13 +251,13 @@ msgid ""
 " or in Odoo reports to track opportunities and related revenues."
 msgstr ""
 "Những trình theo dõi đó có thể được sử dụng trong Google Analytics để theo "
-"dõi số nhấp chuột và khách truy cập hoặc trong báo cáo của Hệ thống để theo "
-"dõi các cơ hội và doanh thu có liên quan."
+"dõi số nhấp chuột và khách truy cập hoặc trong báo cáo của Odoo để theo dõi "
+"các cơ hội và doanh thu có liên quan."
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid "URL"
-msgstr "URL"
+msgstr "Liên kết"
 
 #. module: website_links
 #. odoo-javascript
@@ -286,7 +298,7 @@ msgstr "Liên kêt theo dõi của bạn"
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 #, python-format
 msgid "cancel"
-msgstr "hủy bỏ"
+msgstr "huỷ"
 
 #. module: website_links
 #. odoo-javascript
@@ -305,21 +317,21 @@ msgstr "sao chép"
 #: code:addons/website_links/static/src/js/website_links.js:0
 #, python-format
 msgid "e.g. InMails, Ads, Social, ..."
-msgstr ""
+msgstr "VD: Email, Quảng cáo, Mạng xã hội,..."
 
 #. module: website_links
 #. odoo-javascript
 #: code:addons/website_links/static/src/js/website_links.js:0
 #, python-format
 msgid "e.g. June Sale, Paris Roadshow, ..."
-msgstr ""
+msgstr "VD: Khuyến mại tháng 6, Paris Roadshow,..."
 
 #. module: website_links
 #. odoo-javascript
 #: code:addons/website_links/static/src/js/website_links.js:0
 #, python-format
 msgid "e.g. LinkedIn, Facebook, Leads, ..."
-msgstr ""
+msgstr "VD: LinkedIn, Facebook, Lead,..."
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
@@ -340,4 +352,4 @@ msgstr "đồng ý"
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 #, python-format
 msgid "or"
-msgstr "hay"
+msgstr "hoặc"

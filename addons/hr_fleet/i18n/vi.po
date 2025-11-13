@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* hr_fleet
-# 
+#
 # Translators:
-# Thi Huong Nguyen, 2023
 # Wil Odoo, 2024
+# Thi Huong Nguyen, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 12:31+0000\n"
+"POT-Creation-Date: 2025-05-22 18:36+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,6 +26,8 @@ msgid ""
 "<span class=\"o_stat_value\">1</span>\n"
 "                        <span class=\"o_stat_text\">Employee</span>"
 msgstr ""
+"<span class=\"o_stat_value\">1</span>\n"
+"                        <span class=\"o_stat_text\">Nhân viên</span>"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_mail_activity_plan_template
@@ -54,7 +56,7 @@ msgstr "Không thể xóa địa chỉ của nhân viên có ô tô được li�
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_employee__employee_cars_count
 #: model:ir.model.fields,field_description:hr_fleet.field_res_users__employee_cars_count
 msgid "Cars"
-msgstr "Cars"
+msgstr "Xe hơi"
 
 #. module: hr_fleet
 #: model_terms:ir.ui.view,arch_db:hr_fleet.hr_departure_wizard_view_form
@@ -64,7 +66,7 @@ msgstr "Xe công ty"
 #. module: hr_fleet
 #: model_terms:ir.ui.view,arch_db:hr_fleet.fleet_vehicle_assignation_log_employee_view_list
 msgid "Current Driver"
-msgstr "Current Driver"
+msgstr "Tài xế Hiện tại"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_hr_departure_wizard
@@ -89,7 +91,7 @@ msgstr "Tài xế (Nhân viên)"
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_fleet_vehicle_assignation_log
 msgid "Drivers history on a vehicle"
-msgstr "Lịch sử tài xế của một phương tiện"
+msgstr "Lịch sử tài xế của một xe"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_hr_employee
@@ -102,7 +104,7 @@ msgstr "Nhân viên"
 #: code:addons/hr_fleet/models/mail_activity_plan_template.py:0
 #, python-format
 msgid "Employee %s is not linked to a vehicle."
-msgstr ""
+msgstr "Nhân viên %s không liên kết với xe nào."
 
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_fleet_vehicle__driver_employee_name
@@ -112,24 +114,31 @@ msgstr "Tên nhân viên"
 #. module: hr_fleet
 #: model:ir.model.fields.selection,name:hr_fleet.selection__mail_activity_plan_template__responsible_type__fleet_manager
 msgid "Fleet Manager"
-msgstr "Fleet Manager"
+msgstr "Quản lý đội xe"
 
 #. module: hr_fleet
 #. odoo-python
 #: code:addons/hr_fleet/models/mail_activity_plan_template.py:0
 #, python-format
 msgid "Fleet Manager is limited to Employee plans."
-msgstr ""
+msgstr "Quản lý đội xe được giới hạn ở các gói dành cho Nhân viên."
 
 #. module: hr_fleet
 #: model_terms:ir.ui.view,arch_db:hr_fleet.view_employee_form
 msgid "Fleet Mobility Card"
-msgstr ""
+msgstr "Số thẻ giao thông"
 
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_fleet_vehicle__future_driver_employee_id
 msgid "Future Driver (Employee)"
 msgstr "Tài xế tương lai (Nhân viên)"
+
+#. module: hr_fleet
+#. odoo-python
+#: code:addons/hr_fleet/models/employee.py:0
+#, python-format
+msgid "History Employee Cars"
+msgstr ""
 
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_employee__license_plate
@@ -141,7 +150,7 @@ msgstr "Biển số xe"
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_employee__mobility_card
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_employee_public__mobility_card
 msgid "Mobility Card"
-msgstr "Mobility Card"
+msgstr "Thẻ giao thông"
 
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_fleet_vehicle_assignation_log__attachment_number
@@ -151,7 +160,7 @@ msgstr "Số lượng đính kèm"
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_fleet_vehicle_odometer
 msgid "Odometer log for a vehicle"
-msgstr "Nhật ký công tơ mét cho từng phương tiện"
+msgstr "Nhật ký công tơ mét cho phương tiện"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_hr_employee_public
@@ -168,12 +177,12 @@ msgstr "Nhân viên liên quan"
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_departure_wizard__release_campany_car
 msgid "Release Company Car"
-msgstr "Release Company Car"
+msgstr "Giải phóng xe công ty"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_fleet_vehicle_log_services
 msgid "Services for vehicles"
-msgstr "Các dịch vụ cho phương tiện"
+msgstr "Dịch vụ cho phương tiện"
 
 #. module: hr_fleet
 #. odoo-python
@@ -181,6 +190,7 @@ msgstr "Các dịch vụ cho phương tiện"
 #, python-format
 msgid "The vehicle of employee %(employee)s is not linked to a fleet manager."
 msgstr ""
+"Xe của nhân viên %(employee)s không được liên kết với quản lý đội xe nào."
 
 #. module: hr_fleet
 #. odoo-javascript
@@ -197,14 +207,14 @@ msgstr "Người dùng"
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_fleet_vehicle
 msgid "Vehicle"
-msgstr "Phương tiện"
+msgstr "Xe"
 
 #. module: hr_fleet
 #: model:ir.model,name:hr_fleet.model_fleet_vehicle_log_contract
 msgid "Vehicle Contract"
-msgstr "Vehicle Contract"
+msgstr "Hợp đồng phương tiện"
 
 #. module: hr_fleet
 #: model:ir.model.fields,field_description:hr_fleet.field_hr_employee__car_ids
 msgid "Vehicles (private)"
-msgstr "Phương tiện (tư nhân)"
+msgstr "Xe (tư nhân)"

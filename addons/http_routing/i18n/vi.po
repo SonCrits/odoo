@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* http_routing
-# 
+#
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
@@ -23,7 +23,7 @@ msgstr ""
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.403
 msgid "403: Forbidden"
-msgstr "403: Không được truy cập"
+msgstr "403: không được truy cập"
 
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.404
@@ -89,12 +89,12 @@ msgstr "Qweb"
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.400
 msgid "Take a look at the error message below."
-msgstr "Hãy xem thông báo lỗi bên dưới."
+msgstr "Hãy xem thông điệp lỗi dưới đây"
 
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
 msgid "The error occurred while rendering the template"
-msgstr ""
+msgstr "Đã xảy ra lỗi trong khi kết xuất mẫu"
 
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.403

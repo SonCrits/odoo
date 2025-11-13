@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_qr_code_sepa
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -50,7 +50,7 @@ msgstr "Không thể tạo mã QR SEPA bằng IBAN không thuộc SEPA"
 #: code:addons/account_qr_code_sepa/models/res_bank.py:0
 #, python-format
 msgid "SEPA Credit Transfer QR"
-msgstr "QR chuyển khoản tín dụng SEPA"
+msgstr "Chuyển khoản tín dụng SEPA QR"
 
 #. module: account_qr_code_sepa
 #. odoo-python

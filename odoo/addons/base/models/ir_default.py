@@ -39,7 +39,9 @@ class IrDefault(models.Model):
     def write(self, vals):
         if self:
             self.env.registry.clear_cache()
-        return super(IrDefault, self).write(vals)
+        new_default = super().write(vals)
+        self.check_access_rule('write')
+        return new_default
 
     def unlink(self):
         if self:
@@ -89,7 +91,7 @@ class IrDefault(models.Model):
             ('user_id', '=', user_id),
             ('company_id', '=', company_id),
             ('condition', '=', condition),
-        ])
+        ], limit=1)
         if default:
             # Avoid clearing the cache if nothing changes
             if default.json_value != json_value:

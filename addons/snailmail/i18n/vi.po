@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* snailmail
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# Thi Huong Nguyen, 2023
-# 
+# Thi Huong Nguyen, 2024
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__snailmail_letter__error_code__attachment_error
 msgid "ATTACHMENT_ERROR"
-msgstr ""
+msgstr "ATTACHMENT_ERROR"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_company__snailmail_cover
@@ -31,7 +31,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_format_error__snailmail_cover
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_format_error
 msgid "Add a Cover Page"
-msgstr "Add a Cover Page"
+msgstr "Thêm trang bìa"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
@@ -43,14 +43,14 @@ msgstr "Địa chỉ"
 #: code:addons/snailmail/static/src/core/failure_model_patch.js:0
 #, python-format
 msgid "An error occurred when sending a letter with Snailmail."
-msgstr ""
+msgstr "Đã xảy ra lỗi khi gửi thư bằng đường bưu điện."
 
 #. module: snailmail
 #. odoo-python
 #: code:addons/snailmail/models/snailmail_letter.py:0
 #, python-format
 msgid "An error occurred when sending the document by post.<br>Error: %s"
-msgstr ""
+msgstr "Đã xảy ra lỗi khi gửi tài liệu bằng đường bưu điện.<br>Lỗi: %s"
 
 #. module: snailmail
 #. odoo-python
@@ -64,24 +64,24 @@ msgstr "An unknown error happened. Please contact the support."
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "An unknown error occurred. Please contact our"
-msgstr ""
+msgstr "Đã xảy ra lỗi không xác định. Vui lòng liên hệ với"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__attachment_id
 msgid "Attachment"
-msgstr "Tệp đính kèm"
+msgstr "Đính kèm"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__attachment_fname
 msgid "Attachment Filename"
-msgstr "Attachment Filename"
+msgstr "Attachment filename"
 
 #. module: snailmail
 #. odoo-javascript
 #: code:addons/snailmail/static/src/core/notification_model_patch.js:0
 #, python-format
 msgid "Awaiting Dispatch"
-msgstr ""
+msgstr "Đang chờ gửi"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__duplex
@@ -99,7 +99,7 @@ msgstr "Both sides"
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "Buy credits"
-msgstr "Buy credits"
+msgstr "Mua tín dụng"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__snailmail_letter__error_code__credit_error
@@ -114,7 +114,7 @@ msgstr "Hủy"
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_format_error
 msgid "Cancel Letter"
-msgstr "Cancel Letter"
+msgstr "Cancel letter"
 
 #. module: snailmail
 #. odoo-javascript
@@ -171,7 +171,7 @@ msgstr "Công ty"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cài đặt cấu hình"
+msgstr "Thiết lập cấu hình"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_res_partner
@@ -188,21 +188,21 @@ msgstr "Quốc gia"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__cover
 msgid "Cover Page"
-msgstr "Cover Page"
+msgstr "Cover page"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__create_uid
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_format_error__create_uid
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_missing_required_fields__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr "Tạo bởi"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__create_date
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_format_error__create_date
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_missing_required_fields__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Tạo vào"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__display_name
@@ -225,7 +225,7 @@ msgstr "ID tài liệu"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_mail_thread
 msgid "Email Thread"
-msgstr "Luồng email"
+msgstr "Luồng Email"
 
 #. module: snailmail
 #. odoo-javascript
@@ -257,7 +257,7 @@ msgstr "Loại thất bại"
 #. module: snailmail
 #: model:ir.actions.act_window,name:snailmail.snailmail_letter_format_error_action
 msgid "Format Error"
-msgstr "Format Error"
+msgstr "Lỗi định dạng"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_snailmail_letter_format_error
@@ -286,7 +286,7 @@ msgstr "Thông tin"
 #: code:addons/snailmail/models/snailmail_letter.py:0
 #, python-format
 msgid "Invalid recipient name."
-msgstr ""
+msgstr "Tên người nhận không hợp lệ"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__write_uid
@@ -330,7 +330,7 @@ msgstr "MISSING_REQUIRED_FIELDS"
 #: model:ir.model,name:snailmail.model_mail_message
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_format_error__message_id
 msgid "Message"
-msgstr "Tin nhắn"
+msgstr "Thông báo"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_mail_notification
@@ -340,7 +340,7 @@ msgstr "Thông báo thông điệp"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__model
 msgid "Model"
-msgstr "Mô hình"
+msgstr "Đối tượng"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__snailmail_letter__error_code__no_price_available
@@ -352,7 +352,7 @@ msgstr "NO_PRICE_AVAILABLE"
 #: code:addons/snailmail/models/snailmail_letter.py:0
 #, python-format
 msgid "Not enough credits for Snail Mail"
-msgstr ""
+msgstr "Không đủ tín dụng để dùng Thư bưu điện."
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_mail_notification__notification_type
@@ -397,12 +397,12 @@ msgstr "Đối tác"
 #: code:addons/snailmail/models/snailmail_letter.py:0
 #, python-format
 msgid "Please use an A4 Paper format."
-msgstr ""
+msgstr "Vui lòng sử dụng định dạng trang giấy A4."
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_duplex
 msgid "Print Both sides"
-msgstr "Print Both sides"
+msgstr "In cả hai mặt"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_color
@@ -414,7 +414,7 @@ msgstr "In màu"
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "Re-send letter"
-msgstr ""
+msgstr "Gửi lại thư"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__partner_id
@@ -424,12 +424,12 @@ msgstr "Người nhận"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__reference
 msgid "Related Record"
-msgstr "Related Record"
+msgstr "Related record"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_ir_actions_report
 msgid "Report Action"
-msgstr "Báo cáo hành động"
+msgstr "Báo cáo tác vụ"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_form
@@ -454,7 +454,7 @@ msgstr "Đã gửi bởi"
 #: code:addons/snailmail/models/snailmail_letter.py:0
 #, python-format
 msgid "Snail Mails are successfully sent"
-msgstr ""
+msgstr "Thư bưu điện đã được gửi đi thành công."
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_message__message_type__snailmail
@@ -465,61 +465,61 @@ msgstr "Snailmail"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_company__snailmail_color
 msgid "Snailmail Color"
-msgstr ""
+msgstr "Màu sắc thư bưu điện"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_credit
 msgid "Snailmail Credit Error"
-msgstr "Snailmail Credit Error"
+msgstr "Snailmail credit error"
 
 #. module: snailmail
 #. odoo-javascript
 #: code:addons/snailmail/static/src/messaging_menu/messaging_menu_patch.js:0
 #, python-format
 msgid "Snailmail Failures"
-msgstr ""
+msgstr "Lỗi thư bưu điện"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_format
 msgid "Snailmail Format Error"
-msgstr "Snailmail Format Error"
+msgstr "Snailmail format error"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_snailmail_letter
 #: model:ir.model.fields,field_description:snailmail.field_mail_notification__letter_id
 msgid "Snailmail Letter"
-msgstr "Snailmail Letter"
+msgstr "Snailmail letter"
 
 #. module: snailmail
 #: model:ir.actions.act_window,name:snailmail.action_mail_letters
 #: model:ir.ui.menu,name:snailmail.menu_snailmail_letters
 msgid "Snailmail Letters"
-msgstr "Snailmail Letters"
+msgstr "Snailmail letters"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_fields
 msgid "Snailmail Missing Required Fields"
-msgstr "Snailmail Missing Required Fields"
+msgstr "Snailmail missing required fields"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_price
 msgid "Snailmail No Price Available"
-msgstr "Snailmail No Price Available"
+msgstr "Snailmail no price available"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__message_id
 msgid "Snailmail Status Message"
-msgstr "Snailmail Status Message"
+msgstr "Snailmail status message"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_trial
 msgid "Snailmail Trial Error"
-msgstr "Snailmail Trial Error"
+msgstr "Snailmail trial error"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__mail_notification__failure_type__sn_error
 msgid "Snailmail Unknown Error"
-msgstr "Snailmail Unknown Error"
+msgstr "Snailmail unknown error"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_mail_mail__snailmail_error
@@ -548,28 +548,28 @@ msgstr "Trạng thái"
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__street
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_missing_required_fields__street
 msgid "Street"
-msgstr "Đường"
+msgstr "Địa chỉ"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
 msgid "Street 2..."
-msgstr "Đường 2..."
+msgstr "Địa chỉ, đường..."
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
 msgid "Street..."
-msgstr "Đường..."
+msgstr "Địa chỉ..."
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__street2
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_missing_required_fields__street2
 msgid "Street2"
-msgstr "Đường2"
+msgstr "Địa chỉ"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__snailmail_letter__error_code__trial_error
 msgid "TRIAL_ERROR"
-msgstr "TRIAL_ERROR"
+msgstr "Trial_error"
 
 #. module: snailmail
 #. odoo-python
@@ -603,7 +603,7 @@ msgstr "The country of the partner is not covered by Snailmail."
 msgid ""
 "The country to which you want to send the letter is not supported by our "
 "service."
-msgstr ""
+msgstr "Dịch vụ của chúng tôi không hỗ trợ quốc gia mà bạn muốn gửi thư."
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
@@ -628,7 +628,7 @@ msgstr "The document was correctly sent by post.<br>The tracking id is %s"
 msgid ""
 "The letter could not be sent due to insufficient credits on your IAP "
 "account."
-msgstr ""
+msgstr "Không thể gửi thư do tài khoản IAP của bạn không đủ tín dụng."
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_mail_mail__message_type
@@ -644,7 +644,7 @@ msgstr "UNKNOWN_ERROR"
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_format_error
 msgid "Update Config and Re-send"
-msgstr "Update Config and Re-send"
+msgstr "Cập nhật cấu hình và gửi lại"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
@@ -714,7 +714,7 @@ msgstr ""
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "You need credits on your IAP account to send a letter."
-msgstr ""
+msgstr "Bạn cần có tín dụng trên tài khoản IAP để gửi thư."
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
@@ -732,11 +732,11 @@ msgstr "Mã bưu chính"
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "for further assistance."
-msgstr ""
+msgstr "để được hỗ trợ thêm."
 
 #. module: snailmail
 #. odoo-javascript
 #: code:addons/snailmail/static/src/core_ui/snailmail_error.xml:0
 #, python-format
 msgid "support"
-msgstr ""
+msgstr "hỗ trợ"

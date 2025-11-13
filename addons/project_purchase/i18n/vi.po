@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* project_purchase
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. module: project_purchase
 #: model:ir.model.fields,field_description:project_purchase.field_project_project__purchase_orders_count
 msgid "# Purchase Orders"
-msgstr "# Đơn mua hàng"
+msgstr "SL đơn mua"
 
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_project_project
@@ -39,7 +39,7 @@ msgstr "Hạng mục đơn mua hàng"
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Dòng đơn mua hàng"
+msgstr "Chi tiết mua hàng"
 
 #. module: project_purchase
 #. odoo-python

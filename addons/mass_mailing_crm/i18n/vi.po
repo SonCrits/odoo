@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Wil Odoo, 2023
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,18 +26,20 @@ msgid ""
 "<span class=\"o_stat_text\" invisible=\"not use_leads\">Leads</span>\n"
 "                        <span class=\"o_stat_text\" invisible=\"use_leads\">Opportunities</span>"
 msgstr ""
+"<span class=\"o_stat_text\" invisible=\"not use_leads\">Lead</span>\n"
+"                        <span class=\"o_stat_text\" invisible=\"use_leads\">Cơ hội</span>"
 
 #. module: mass_mailing_crm
 #. odoo-python
 #: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
 #, python-format
 msgid "LEADS"
-msgstr "LEAD"
+msgstr "TIỀM NĂNG"
 
 #. module: mass_mailing_crm
 #: model:ir.model,name:mass_mailing_crm.model_crm_lead
 msgid "Lead/Opportunity"
-msgstr "Lead/Cơ hội"
+msgstr "Tiềm năng/Cơ hội"
 
 #. module: mass_mailing_crm
 #. odoo-python
@@ -44,19 +47,19 @@ msgstr "Lead/Cơ hội"
 #: model:ir.model.fields.selection,name:mass_mailing_crm.selection__utm_campaign__ab_testing_winner_selection__crm_lead_count
 #, python-format
 msgid "Leads"
-msgstr "Lead"
+msgstr "Tiềm năng"
 
 #. module: mass_mailing_crm
 #. odoo-python
 #: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
 #, python-format
 msgid "Leads Analysis"
-msgstr "Phân tích lead"
+msgstr "Phân tích tiềm năng"
 
 #. module: mass_mailing_crm
 #: model:ir.model.fields,field_description:mass_mailing_crm.field_mailing_mailing__crm_lead_count
 msgid "Leads/Opportunities Count"
-msgstr "Số lead/cơ hội"
+msgstr "SL tiềm năng/cơ hội"
 
 #. module: mass_mailing_crm
 #: model:ir.model,name:mass_mailing_crm.model_mailing_mailing

@@ -1,9 +1,12 @@
 import datetime
+import logging
 import pytz
 from unittest.mock import patch
 
 from odoo.tests.common import TransactionCase
 from odoo.tools._monkeypatches_pytz import _tz_mapping
+
+_logger = logging.getLogger(__name__)
 
 
 class TestTZ(TransactionCase):
@@ -28,7 +31,12 @@ class TestTZ(TransactionCase):
             with self.subTest(source=source, target=target):
                 if source == 'Pacific/Enderbury':  # this one was wrong in some version of tzdata
                     continue
-                assertTZEqual(pytz.timezone(source), pytz.timezone(target))
+                try:
+                    target_tz = pytz.timezone(target)
+                except pytz.UnknownTimeZoneError:
+                    _logger.info("Skipping test for %s -> %s, target does not exist", source, target)
+                    continue
+                assertTZEqual(pytz.timezone(source), target_tz)
 
     def test_dont_adapt_available_tz(self):
         with patch.dict(_tz_mapping, {
@@ -53,4 +61,7 @@ class TestTZ(TransactionCase):
         self.env.cr.execute("""UPDATE res_partner set tz='US/Eastern' WHERE id=%s""", (partner.id,))
         partner.invalidate_recordset()
         self.assertEqual(partner.tz, 'US/Eastern')  # tz was update despite selection not existing, but data was not migrated
-        self.assertEqual(partner.tz_offset, '-0400', "We don't expect pytz.timezone to fail if the timezone diseapeared when chaging os version")
+        # comparing with 'America/New_York' see tools/_monkeypatches_pytz.py for mapping
+        expected_offset = datetime.datetime.now(pytz.timezone('America/New_York')).strftime('%z')
+        # offest will be -0400 in summer, -0500 in winter
+        self.assertEqual(partner.tz_offset, expected_offset, "We don't expect pytz.timezone to fail if the timezone diseapeared when chaging os version")

@@ -1,34 +1,38 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* hr_contract
-# 
+# * hr_contract
+#
 # Translators:
-# Thi Huong Nguyen, 2023
 # Wil Odoo, 2024
-# 
+# Phạm Hoàng Giang, 2025
+# Thi Huong Nguyen, 2025
+#
+# "Thi Huong Nguyen (thng)" <thng@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 12:31+0000\n"
-"PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
-"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
+"POT-Creation-Date: 2024-08-13 10:26+0000\n"
+"PO-Revision-Date: 2025-09-09 01:40+0000\n"
+"Last-Translator: \"Thi Huong Nguyen (thng)\" <thng@odoo.com>\n"
+"Language-Team: Vietnamese <https://translate.odoo.com/projects/odoo-17/"
+"hr_contract/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__contract_count
 msgid "# Contracts"
-msgstr "# Hợp đồng"
+msgstr "SL hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_resource_calendar__contracts_count
 msgid "# Contracts using it"
-msgstr "# Hợp đồng đang sử dụng"
+msgstr "SL hợp đồng đang sử dụng"
 
 #. module: hr_contract
 #. odoo-python
@@ -40,7 +44,7 @@ msgstr "Lịch sử hợp đồng của %s"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "/ month"
-msgstr ""
+msgstr "/ tháng"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_hr_employee_view_form3
@@ -49,6 +53,9 @@ msgid ""
 "                                    In Contract Since\n"
 "                                </span>"
 msgstr ""
+"<span class=\"o_stat_text text-danger\" invisible=\"not contract_warning\" title=\"Ký hợp đồng từ\">\n"
+"                                    Ký hợp đồng từ\n"
+"                                </span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_hr_employee_view_form3
@@ -56,6 +63,8 @@ msgid ""
 "<span class=\"o_stat_text text-success\" invisible=\"contract_warning\" "
 "title=\"In Contract Since\"> In Contract Since</span>"
 msgstr ""
+"<span class=\"o_stat_text text-success\" invisible=\"contract_warning\" "
+"title=\"Ký hợp đồng từ\"> Ký hợp đồng từ</span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
@@ -64,6 +73,9 @@ msgid ""
 "                                            To\n"
 "                                        </span>"
 msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                            Đến\n"
+"                                        </span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
@@ -72,6 +84,9 @@ msgid ""
 "                                        From\n"
 "                                    </span>"
 msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                        Từ\n"
+"                                    </span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_hr_employee_view_form3
@@ -83,6 +98,12 @@ msgid ""
 "                                    Contracts\n"
 "                                </span>"
 msgstr ""
+"<span invisible=\"contracts_count != 1\" class=\"o_stat_text text-danger\">\n"
+"                                    Hợp đồng\n"
+"                                </span>\n"
+"                                <span invisible=\"contracts_count == 1\" class=\"o_stat_text text-danger\">\n"
+"                                    Hợp đồng\n"
+"                                </span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
@@ -94,11 +115,17 @@ msgid ""
 "                                        Contract\n"
 "                                    </span>"
 msgstr ""
+"<span invisible=\"contracts_count == 1\" class=\"o_stat_text\">\n"
+"                                        Hợp đồng\n"
+"                                    </span>\n"
+"                                    <span invisible=\"contracts_count &gt; 1\" class=\"o_stat_text\">\n"
+"                                        Hợp đồng\n"
+"                                    </span>"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.res_config_settings_view_form
 msgid "<span>Days</span>"
-msgstr "<span>Days</span>"
+msgstr "<span>Ngày</span>"
 
 #. module: hr_contract
 #. odoo-python
@@ -108,6 +135,8 @@ msgid ""
 "According to Employee's Working Permit Expiration Date, this contract has "
 "been put in red on the %s. Please advise and correct."
 msgstr ""
+"Theo Ngày hết hạn Giấy phép lao động của nhân viên, hợp đồng này đã được "
+"đánh dấu màu đỏ trên %s. Xin vui lòng tham khảo và chỉnh sửa."
 
 #. module: hr_contract
 #. odoo-python
@@ -117,16 +146,18 @@ msgid ""
 "According to the contract's end date, this contract has been put in red on "
 "the %s. Please advise and correct."
 msgstr ""
+"Theo ngày kết thúc hợp đồng, hợp đồng này đã được đánh dấu màu đỏ trên %s. "
+"Xin vui lòng tham khảo và chỉnh sửa."
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_needaction
 msgid "Action Needed"
-msgstr "Hành động cần thiết"
+msgstr "Cần có hành động"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__active
 msgid "Active"
-msgstr "Đang hoạt động"
+msgstr "Có hiệu lực"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__active_employee
@@ -157,7 +188,7 @@ msgstr "Trạng thái hoạt động"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_type_icon
 msgid "Activity Type Icon"
-msgstr "Biểu tượng loại hoạt động"
+msgstr "Icon kiểu hoạt động"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_mail_activity_schedule
@@ -191,12 +222,12 @@ msgstr "Đã lưu trữ"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_attachment_count
 msgid "Attachment Count"
-msgstr "Số lượng tệp đính kèm"
+msgstr "SL tệp đính kèm"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_res_users__bank_account_id
 msgid "Bank Account Number"
-msgstr "Tài khoản Ngân hàng"
+msgstr "Tài khoản ngân hàng"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_employee_base
@@ -217,6 +248,8 @@ msgid ""
 "Calendar Mismatch: The employee's calendar does not match this contract's "
 "calendar. This could lead to unexpected behaviors."
 msgstr ""
+"Lịch không khớp: Lịch của nhân viên không khớp với lịch của hợp đồng này. "
+"Điều này có thể dẫn đến những hành vi không mong muốn."
 
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract__state__cancel
@@ -286,7 +319,7 @@ msgstr "Chi tiết hợp đồng"
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_departure_wizard_view_form
 msgid "Contract End Date"
-msgstr "Contract End Date"
+msgstr "Ngày kết thúc hợp đồng"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.res_config_settings_view_form
@@ -297,7 +330,7 @@ msgstr "Giai đoạn thông báo hết hạn hợp đồng"
 #: model:ir.model.fields,field_description:hr_contract.field_res_company__contract_expiration_notice_period
 #: model:ir.model.fields,field_description:hr_contract.field_res_config_settings__contract_expiration_notice_period
 msgid "Contract Expiry Notice Period"
-msgstr ""
+msgstr "Giai đoạn thông báo hết hạn hợp đồng"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
@@ -314,7 +347,7 @@ msgstr "Tên hợp đồng"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__name
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Contract Reference"
-msgstr "Mã hợp đồng"
+msgstr "Tham chiếu hợp đồng"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
@@ -325,7 +358,7 @@ msgstr "Ngày bắt đầu hợp đồng"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__contract_type_id
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__contract_type_id
 msgid "Contract Type"
-msgstr "Kiểu Hợp đồng"
+msgstr "Kiểu hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__contract_wage
@@ -335,7 +368,7 @@ msgstr "Mức lương hợp đồng"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__contract_warning
 msgid "Contract Warning"
-msgstr "Lịch không khớp"
+msgstr "Cảnh báo hợp đồng"
 
 #. module: hr_contract
 #: model:mail.message.subtype,description:hr_contract.mt_contract_pending
@@ -346,7 +379,7 @@ msgstr "Hợp đồng sắp hết hạn"
 #. module: hr_contract
 #: model:mail.message.subtype,description:hr_contract.mt_contract_close
 msgid "Contract expired"
-msgstr "Hợp động Hết hạn"
+msgstr "Hợp động hết hạn"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_contract_history
@@ -380,7 +413,7 @@ msgstr "Hợp đồng cần xem lại"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Contracts to review"
-msgstr ""
+msgstr "Hợp đồng cần xem lại"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__under_contract_state
@@ -397,7 +430,7 @@ msgstr "Quốc gia"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__country_code
 #: model:ir.model.fields,field_description:hr_contract.field_hr_payroll_structure_type__country_code
 msgid "Country Code"
-msgstr "Mã Quốc gia"
+msgstr "Mã quốc gia"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
@@ -407,19 +440,19 @@ msgstr "Tạo"
 #. module: hr_contract
 #: model_terms:ir.actions.act_window,help:hr_contract.action_hr_contract
 msgid "Create a new contract"
-msgstr "Tạo hợp đồng mới"
+msgstr "Tạo mới một hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__create_uid
 #: model:ir.model.fields,field_description:hr_contract.field_hr_payroll_structure_type__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr "Tạo bởi"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__create_date
 #: model:ir.model.fields,field_description:hr_contract.field_hr_payroll_structure_type__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Tạo vào"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__currency_id
@@ -431,12 +464,12 @@ msgstr "Tiền tệ"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__contract_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Current Contract"
-msgstr "Hợp đồng Hiện hành"
+msgstr "Hợp đồng hiện hành"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
 msgid "Current Contracts"
-msgstr "Hợp đồng hiện hành"
+msgstr "Hợp đồng hiện tại"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_employee__contract_id
@@ -451,7 +484,7 @@ msgstr "Hiện đang có hợp đồng"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_payroll_structure_type__default_resource_calendar_id
 msgid "Default Working Hours"
-msgstr "Khung Giờ làm việc Mặc định"
+msgstr "Lịch làm việc mặc định"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
@@ -463,12 +496,12 @@ msgstr "Xoá"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__department_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Department"
-msgstr "Bộ phận"
+msgstr "Phòng ban"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_departure_wizard
 msgid "Departure Wizard"
-msgstr "Departure Wizard"
+msgstr "Hướng dẫn tính năng nghỉ việc"
 
 #. module: hr_contract
 #. odoo-python
@@ -476,8 +509,7 @@ msgstr "Departure Wizard"
 #, python-format
 msgid ""
 "Departure date can't be earlier than the start date of current contract."
-msgstr ""
-"Departure date can't be earlier than the start date of current contract."
+msgstr "Ngày nghỉ việc không thể sớm hơn ngày bắt đầu hợp đồng hiện tại."
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__display_name
@@ -489,7 +521,7 @@ msgstr "Tên hiển thị"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
 msgid "Edit Contract"
-msgstr "Sửa Hợp đồng"
+msgstr "Sửa hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_employee
@@ -507,7 +539,7 @@ msgstr "Hợp đồng nhân viên"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__contract_ids
 msgid "Employee Contracts"
-msgstr "Hợp đồng Lao động"
+msgstr "Hợp đồng lao động"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
@@ -517,7 +549,7 @@ msgstr "Thông tin nhân viên"
 #. module: hr_contract
 #: model:res.groups,name:hr_contract.group_hr_contract_employee_manager
 msgid "Employee Manager"
-msgstr ""
+msgstr "Quản lý nhân viên"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_res_users__bank_account_id
@@ -555,14 +587,14 @@ msgstr "Ngày kết thúc thời hạn thử việc(nếu có)."
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__trial_date_end
 msgid "End of Trial Period"
-msgstr "Kết thúc Thử việc"
+msgstr "Kết thúc thử việc"
 
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract__state__close
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract_history__state__close
 #: model:mail.message.subtype,name:hr_contract.mt_contract_close
 msgid "Expired"
-msgstr "Đã hết hạn"
+msgstr "Hết hạn"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__first_contract_date
@@ -579,12 +611,12 @@ msgstr "Người theo dõi"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Người theo dõi (Đối tác)"
+msgstr "Người theo dõi (đối tác)"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Font biểu tượng, ví dụ: fa-tasks"
+msgstr "Biểu tượng Font-Awesome (vd: fa-tasks)"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -599,7 +631,7 @@ msgstr "Xanh lá"
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract__kanban_state__normal
 msgid "Grey"
-msgstr "Xám"
+msgstr "Màu xám"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_search
@@ -621,7 +653,7 @@ msgstr "Chịu trách nhiệm"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__has_message
 msgid "Has Message"
-msgstr "Có tin nhắn"
+msgstr "Có thông điệp"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__date_hired
@@ -643,18 +675,18 @@ msgstr "Biểu tượng"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Biểu tượng cho thấy một hoạt động ngoại lệ."
+msgstr "Icon để chỉ báo một hoạt động ngoại lệ."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Nếu chọn, bạn cần chú ý tới các tin nhắn mới."
+msgstr "Nếu được đánh dấu, các thông điệp mới sẽ cần bạn xem xét."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_has_error
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Nếu chọn, một số tin nhắn sẽ có lỗi gửi."
+msgstr "Nếu được đánh dấu, một số thông điệp đã gặp lỗi khi gửi đi."
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__is_under_contract
@@ -664,7 +696,7 @@ msgstr "Là đang có hợp đồng"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_is_follower
 msgid "Is Follower"
-msgstr "Là người theo dõi"
+msgstr "Đang theo dõi"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__job_id
@@ -672,12 +704,12 @@ msgstr "Là người theo dõi"
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_search
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Job Position"
-msgstr "Chức vụ"
+msgstr "Vị trí công việc"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__kanban_state
 msgid "Kanban State"
-msgstr "Trạng thái kanban"
+msgstr "Trạng thái"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__write_uid
@@ -694,27 +726,27 @@ msgstr "Cập nhật lần cuối vào"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Late Activities"
-msgstr "Hoạt động chậm trễ"
+msgstr "Hoạt động trễ"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_has_error
 msgid "Message Delivery error"
-msgstr "Lỗi gửi tin nhắn"
+msgstr "Có lỗi gửi thông điệp"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_ids
 msgid "Messages"
-msgstr "Tin nhắn"
+msgstr "Thông điệp"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
 msgid "Monthly Wage"
-msgstr "Lương tháng"
+msgstr "Lương tháng cơ bản"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Hạn chót hoạt động của tôi"
+msgstr "Hạn chót hoạt động"
 
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract__state__draft
@@ -725,22 +757,22 @@ msgstr "Mới"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr "Sự kiện theo lịch cho hoạt động tiếp theo"
+msgstr "Sự kiện lịch hoạt động tiếp theo"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Hạn chót cho hoạt động tiếp theo"
+msgstr "Hạn chót hoạt động kế tiếp"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_summary
 msgid "Next Activity Summary"
-msgstr "Tóm tắt hoạt động tiếp theo"
+msgstr "Tóm tắt hoạt động kế tiếp"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_type_id
 msgid "Next Activity Type"
-msgstr "Loại hoạt động tiếp theo"
+msgstr "Kiểu hành động kế tiếp"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_search
@@ -793,17 +825,17 @@ msgstr "Số lượng lỗi"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Số tin nhắn cần xử lý"
+msgstr "Số thông điệp cần có hành động"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Số tin nhắn bị gửi lỗi"
+msgstr "Số thông điệp có lỗi khi gửi đi"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_form
 msgid "Open Contract"
-msgstr ""
+msgstr "Mở hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__hr_responsible_id
@@ -832,19 +864,24 @@ msgid "Reference Working Time"
 msgstr "Giờ làm việc tham khảo"
 
 #. module: hr_contract
+#: model:ir.model,name:hr_contract.model_resource_calendar_leaves
+msgid "Resource Time Off Detail"
+msgstr "Chi tiết ngày nghỉ của tài nguyên"
+
+#. module: hr_contract
 #: model:ir.model,name:hr_contract.model_resource_calendar
 msgid "Resource Working Time"
-msgstr "Nguồn lực thời gian làm việc"
+msgstr "Lịch làm việc của nguồn lực"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_resource_resource
 msgid "Resources"
-msgstr "Nguồn lực"
+msgstr "Tài nguyên"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_user_id
 msgid "Responsible User"
-msgstr "Người phụ trách"
+msgstr "Người chịu trách nhiệm"
 
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract__state__open
@@ -856,7 +893,7 @@ msgstr "Đang chạy"
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_history_view_search
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Running Contracts"
-msgstr "Hợp đồng đang thực hiện"
+msgstr "Hợp đồng còn hiệu lực"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_has_sms_error
@@ -866,7 +903,7 @@ msgstr "Lỗi gửi SMS"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Salary Information"
-msgstr "Thông tin Lương"
+msgstr "Thông tin lương"
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_payroll_structure_type
@@ -891,7 +928,7 @@ msgstr "Tìm kiếm mã hợp đồng"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_departure_wizard__set_date_end
 msgid "Set Contract End Date"
-msgstr "Set Contract End Date"
+msgstr "Thiết lập ngày kết thúc hợp đồng"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_departure_wizard__set_date_end
@@ -902,8 +939,7 @@ msgstr "Đặt ngày kết thúc cho hợp đồng hiện tại."
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Show all records which have a next action date before today"
 msgstr ""
-"Hiển thị tất cả các tập dữ liệu có ngày hành động tiếp theo trước ngày hôm "
-"nay"
+"Hiển thị tất cả các bản ghi có ngày tác vụ tiếp theo trước ngày hôm nay"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__date_start
@@ -930,9 +966,9 @@ msgid ""
 "Planned: Future activities."
 msgstr ""
 "Trạng thái dựa trên hoạt động\n"
-"Quá hạn: Hạn chót hạn đã qua\n"
+"Quá hạn: Ngày đến hạn đã trôi qua\n"
 "Hôm nay: Hôm nay là ngày phải thực hiện\n"
-"Kế hoạch: Cần thực hiện trong tương lai."
+"Đã hoạch định: Các hoạt động trong tương lai."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__state
@@ -947,42 +983,42 @@ msgid ""
 "The ISO country code in two chars. \n"
 "You can use this field for quick search."
 msgstr ""
-"Mã quốc gia ISO với hai ký tự.\n"
-"Bạn có thể sử dụng trường này để tìm kiếm nhanh."
+"Mã ISO quốc gia có 2 ký tự. \n"
+"Bạn có thể dùng trường này để tìm kiếm nhanh."
 
 #. module: hr_contract
 #. odoo-python
 #: code:addons/hr_contract/models/hr_contract.py:0
 #, python-format
 msgid "The contract of %s is about to expire."
-msgstr "The contract of %s is about to expire."
+msgstr "Hợp đồng của %s sắp hết hạn."
 
 #. module: hr_contract
 #. odoo-python
 #: code:addons/hr_contract/models/hr_contract.py:0
 #, python-format
 msgid "The work permit of %s is about to expire."
-msgstr ""
+msgstr "Giấy phép lao động của %s sắp hết hạn."
 
 #. module: hr_contract
 #: model:mail.message.subtype,name:hr_contract.mt_contract_pending
 msgid "To Renew"
-msgstr "Cần gia hạn"
+msgstr "Chờ gia hạn"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Today Activities"
-msgstr "Hoạt động hôm nay"
+msgstr "Có hoạt động hôm nay"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Type in notes about this contract..."
-msgstr ""
+msgstr "Nhập ghi chú về hợp đồng này..."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Loại hoạt động ngoại lệ trong tập dữ liệu."
+msgstr "Kiểu hoạt động ngoại lệ trên bản ghi."
 
 #. module: hr_contract
 #: model:ir.model.fields.selection,name:hr_contract.selection__hr_contract_history__under_contract_state__done
@@ -997,23 +1033,23 @@ msgstr "Người dùng"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__visa_no
 msgid "Visa No"
-msgstr "Số Visa"
+msgstr "Số visa"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__wage
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__wage
 msgid "Wage"
-msgstr "Tiền công/tiền lương"
+msgstr "Lương"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__website_message_ids
 msgid "Website Messages"
-msgstr "Thông báo trên trang web"
+msgstr "Thông báo Website"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__website_message_ids
 msgid "Website communication history"
-msgstr "Lịch sử trao đổi qua trang web"
+msgstr "Lịch sử thông tin liên lạc website"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.res_config_settings_view_form
@@ -1024,16 +1060,23 @@ msgstr "Giai đoạn thông báo hết hạn giấy phép làm việc"
 #: model:ir.model.fields,field_description:hr_contract.field_res_company__work_permit_expiration_notice_period
 #: model:ir.model.fields,field_description:hr_contract.field_res_config_settings__work_permit_expiration_notice_period
 msgid "Work Permit Expiry Notice Period"
-msgstr ""
+msgstr "Giai đoạn thông báo hết hạn giấy phép làm việc"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__permit_no
 msgid "Work Permit No"
-msgstr "Số giấy phép LĐ"
+msgstr "Số giấy phép lao động"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__resource_calendar_id
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_history__resource_calendar_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Working Schedule"
-msgstr "Thời gian làm việc"
+msgstr "Lịch làm việc"
+
+#. module: hr_contract
+#. odoo-python
+#: code:addons/hr_contract/models/hr_employee.py:0
+#, python-format
+msgid "You cannot delete an employee with a running contract."
+msgstr "Bạn không thể xoá một nhân viên có hợp đồng còn hiệu lực."

@@ -1,17 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* sale_product_configurator
-# 
+#
 # Translators:
 # Wil Odoo, 2023
-# 
+# Thi Huong Nguyen, 2024
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,14 +32,14 @@ msgstr "Thêm"
 #: code:addons/sale_product_configurator/static/src/js/product/product.xml:0
 #, python-format
 msgid "Add one"
-msgstr "Thêm một "
+msgstr "Thêm"
 
 #. module: sale_product_configurator
 #. odoo-javascript
 #: code:addons/sale_product_configurator/static/src/js/product_list/product_list.xml:0
 #, python-format
 msgid "Add optional products"
-msgstr ""
+msgstr "Thêm sản phẩm tuỳ chọn"
 
 #. module: sale_product_configurator
 #: model:ir.model.fields,field_description:sale_product_configurator.field_sale_order_line__product_template_attribute_value_ids
@@ -62,7 +63,7 @@ msgstr "Bọc chân ghế"
 #: code:addons/sale_product_configurator/static/src/js/product_configurator_dialog/product_configurator_dialog.js:0
 #, python-format
 msgid "Configure your product"
-msgstr ""
+msgstr "Cấu hình sản phẩm của bạn"
 
 #. module: sale_product_configurator
 #. odoo-javascript
@@ -76,17 +77,17 @@ msgstr "Xác nhận"
 #: code:addons/sale_product_configurator/static/src/js/product_template_attribute_line/product_template_attribute_line.xml:0
 #, python-format
 msgid "Enter a customized value"
-msgstr ""
+msgstr "Nhập giá trị tùy chỉnh"
 
 #. module: sale_product_configurator
 #: model:ir.model.fields,field_description:sale_product_configurator.field_sale_order_line__is_configurable_product
 msgid "Is the product configurable?"
-msgstr "Sản phẩm có thể cấu hình được không?"
+msgstr "Sản phẩm có định cấu hình được không?"
 
 #. module: sale_product_configurator
 #: model:product.template,description_sale:sale_product_configurator.product_product_1_product_template
 msgid "Office chairs can harm your floor: protect it."
-msgstr "Ghế văn phòng có thể làm hỏng sàn. Hãy bảo vệ sàn nhà."
+msgstr "Ghế văn phòng có thể gây hại cho sàn nhà của bạn: bảo vệ nó."
 
 #. module: sale_product_configurator
 #: model:ir.model.fields,field_description:sale_product_configurator.field_product_product__optional_product_ids
@@ -150,26 +151,26 @@ msgstr "Đề xuất khi 'Thêm vào giỏ hàng' hoặc báo giá"
 #: code:addons/sale_product_configurator/static/src/js/product/product.xml:0
 #, python-format
 msgid "Remove one"
-msgstr "Xóa một"
+msgstr "Xóa"
 
 #. module: sale_product_configurator
 #. odoo-javascript
 #: code:addons/sale_product_configurator/static/src/js/product/product.xml:0
 #, python-format
 msgid "Remove product"
-msgstr ""
+msgstr "Xoá sản phẩm"
 
 #. module: sale_product_configurator
 #: model:ir.model,name:sale_product_configurator.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Dòng đơn bán hàng"
+msgstr "Dòng đơn bán"
 
 #. module: sale_product_configurator
 #. odoo-javascript
 #: code:addons/sale_product_configurator/static/src/js/product/product.xml:0
 #, python-format
 msgid "This option or combination of options is not available"
-msgstr ""
+msgstr "Tùy chọn này hoặc sự kết hợp các tùy chọn không khả dụng"
 
 #. module: sale_product_configurator
 #. odoo-javascript

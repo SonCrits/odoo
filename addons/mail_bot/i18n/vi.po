@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Wil Odoo, 2023
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgid ""
 "too human for me! Let's keep it professional ❤️"
 msgstr ""
 "Aaaaaw thật dễ thương nhưng, bạn biết đấy, bot không hoạt động theo cách đó."
-" Bạn quá con người đối với tôi! Hãy giữ cho nó chuyên nghiệp"
+" Bạn quá con người đối với tôi! Hãy chuyên nghiệp ❤️"
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__disabled
@@ -43,7 +44,7 @@ msgstr "Kênh thảo luận"
 #. module: mail_bot
 #: model:ir.model,name:mail_bot.model_mail_thread
 msgid "Email Thread"
-msgstr "Luồng email"
+msgstr "Luồng Email"
 
 #. module: mail_bot
 #. odoo-python
@@ -53,8 +54,8 @@ msgid ""
 "Great! 👍<br/>To access special commands, <b>start your sentence with</b> "
 "<span class=\"o_odoobot_command\">/</span>. Try getting help."
 msgstr ""
-"Great! 👍<br/>To access special commands, <b>start your sentence with</b> "
-"<span class=\"o_odoobot_command\">/</span>. Try getting help."
+"Tuyệt! 👍<br/>Để truy cập các lệnh đặc biệt, <b>hãy bắt đầu câu với</b> <span"
+" class=\"o_odoobot_command\">/</span> để được gợi ý."
 
 #. module: mail_bot
 #: model:ir.model,name:mail_bot.model_ir_http
@@ -73,7 +74,7 @@ msgstr "Xin chào,"
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "Hmmm..."
-msgstr "Hmmm..."
+msgstr "Ừm..."
 
 #. module: mail_bot
 #. odoo-python
@@ -81,19 +82,22 @@ msgstr "Hmmm..."
 #, python-format
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
-"<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+"<br/>Congratulations, you finished this tour. You can now <b>close this "
+"conversation</b> or start the tour again with typing <span "
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
-"I am a simple bot, but if that's a dog, he is the cutest 😊 "
-"<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+"Tôi là một robot đơn giản, nhưng tôi biết nếu đó là một chú cún thì chú cún "
+"đó thật dễ thương 😊 <br/>Xin chúc mừng, bạn đã kết thúc chuyến tham quan "
+"này. Bây giờ bạn có thể <b>đóng cuộc trò chuyện này</b> hoặc bắt đầu lại "
+"chuyến tham quan bằng cách nhập <span class=\"o_odoobot_command\">bắt đầu "
+"chuyến tham quan</span>. Hãy tận hưởng quá trình khám phá!"
 
 #. module: mail_bot
 #. odoo-python
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "I'm afraid I don't understand. Sorry!"
-msgstr "I sợ là mình không hiểu. Rất tiếc!"
+msgstr "Tôi e rằng tôi không hiểu. Rất tiếc!"
 
 #. module: mail_bot
 #. odoo-python
@@ -103,8 +107,9 @@ msgid ""
 "I'm not smart enough to answer your question.<br/>To follow my guide, ask: "
 "<span class=\"o_odoobot_command\">start the tour</span>."
 msgstr ""
-"I'm not smart enough to answer your question.<br/>To follow my guide, ask: "
-"<span class=\"o_odoobot_command\">start the tour</span>."
+"Tôi không đủ thông minh để trả lời câu hỏi của bạn.<br/>Để theo tiếp hướng "
+"dẫn của tôi, hãy: <span class=\"o_odoobot_command\">khởi động chuyến tham "
+"quan</span>."
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__idle
@@ -124,13 +129,13 @@ msgid ""
 "Not exactly. To continue the tour, send an emoji: <b>type</b> <span "
 "class=\"o_odoobot_command\">:)</span> and press enter."
 msgstr ""
-"Not exactly. To continue the tour, send an emoji: <b>type</b> <span "
-"class=\"o_odoobot_command\">:)</span> and press enter."
+"Không chính xác. Để tiếp tục tour, hãy gửi một biểu tượng cảm xúc (emoji): "
+"<b>gõ</b> <span class=\"o_odoobot_command\">:)</span> và bấm enter."
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__not_initialized
 msgid "Not initialized"
-msgstr "Không được khởi tạo"
+msgstr "Chưa khởi tạo"
 
 #. module: mail_bot
 #. odoo-python
@@ -141,9 +146,9 @@ msgid ""
 "class=\"o_odoobot_command\">/</span> and wait for the propositions. Select "
 "<span class=\"o_odoobot_command\">help</span> and press enter"
 msgstr ""
-"Not sure what you are doing. Please, type <span "
-"class=\"o_odoobot_command\">/</span> and wait for the propositions. Select "
-"<span class=\"o_odoobot_command\">help</span> and press enter"
+"Không chắc là bạn đang làm gì. Vui lòng gõ <span "
+"class=\"o_odoobot_command\">/</span> và đợi gợi ý xuất hiện. chọn <span "
+"class=\"o_odoobot_command\">help</span> và bấm enter"
 
 #. module: mail_bot
 #. odoo-python
@@ -153,21 +158,23 @@ msgid ""
 "Odoo's chat helps employees collaborate efficiently. I'm here to help you "
 "discover its features."
 msgstr ""
+"Ứng dụng trò chuyện của Odoo giúp nhân viên cộng tác hiệu quả. Tôi ở đây để "
+"giúp bạn khám phá các tính năng của ứng dụng này."
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
 msgid "OdooBot Status"
-msgstr "Trạng thái OdooBot"
+msgstr "Tình trạng OdooBot"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
 msgid "Odoobot Failed"
-msgstr "Odoobot Failed"
+msgstr "Odoobot thất bại"
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_attachement
 msgid "Onboarding attachment"
-msgstr ""
+msgstr "Tệp hướng dẫn đính kèm"
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_command
@@ -182,7 +189,7 @@ msgstr "Biểu tượng cảm xúc"
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_ping
 msgid "Onboarding ping"
-msgstr "ping"
+msgstr "Giới thiệu ping"
 
 #. module: mail_bot
 #. odoo-python
@@ -193,9 +200,10 @@ msgid ""
 "human language...<br/>I can show you features if you write: <span "
 "class=\"o_odoobot_command\">start the tour</span>."
 msgstr ""
-"Sorry I'm sleepy. Or not! Maybe I'm just trying to hide my unawareness of "
-"human language...<br/>I can show you features if you write: <span "
-"class=\"o_odoobot_command\">start the tour</span>."
+"Xin lỗi tôi đang buồn ngủ. Hoặc không! Có lẽ tôi chỉ đang cố che giấu sự "
+"không biết của mình về ngôn ngữ của con người...<br/> Tôi có thể cho bạn xem"
+" các tính năng nếu bạn viết: <span class=\"o_odoobot_command\">khởi động "
+"chuyến tham quan</span>."
 
 #. module: mail_bot
 #. odoo-python
@@ -205,15 +213,16 @@ msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
 "Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
 msgstr ""
-"Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Xin lỗi tôi không chú ý nghe. Để thu hút sự chú ý của ai đó, hãy <b>ping "
+"người đó</b>. Viết <span class=\"o_odoobot_command\">@OdooBot</span> và chọn"
+" tôi."
 
 #. module: mail_bot
 #. odoo-python
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "That's not nice! I'm a bot but I have feelings... 💔"
-msgstr "Điều đó không tốt! Tôi là một bot nhưng tôi có cảm xúc ... 💔"
+msgstr "Thật không hay! Tuy là robot nhưng tôi cũng có cảm xúc... 💔"
 
 #. module: mail_bot
 #. odoo-python
@@ -223,22 +232,22 @@ msgid ""
 "To <b>send an attachment</b>, click on the <i class=\"fa fa-paperclip\" "
 "aria-hidden=\"true\"></i> icon and select a file."
 msgstr ""
-"To <b>send an attachment</b>, click on the <i class=\"fa fa-paperclip\" "
-"aria-hidden=\"true\"></i> icon and select a file."
+"Để <b>gửi một đính kèm</b>, hãy bấm vào biểu tượng <i class=\"fa fa-"
+"paperclip\" aria-hidden=\"true\"></i> và chọn một tập tin."
 
 #. module: mail_bot
 #. odoo-python
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "To start, try to send me an emoji :)"
-msgstr "Để bắt đầu, hãy thử gửi cho tôi một biểu tượng cảm xúc :)"
+msgstr "Để bắt đầu, hãy thử gửi tôi một biểu tượng cảm xúc :)"
 
 #. module: mail_bot
 #. odoo-python
 #: code:addons/mail_bot/models/res_users.py:0
 #, python-format
 msgid "Try to send me an emoji"
-msgstr ""
+msgstr "Hãy thử gửi cho tôi một biểu tượng cảm xúc"
 
 #. module: mail_bot
 #. odoo-python
@@ -251,6 +260,11 @@ msgid ""
 "documentation</a> or <a href=\"https://www.odoo.com/slides\" "
 "target=\"_blank\">our videos</a>."
 msgstr ""
+"Thật không may, tôi chỉ là một robot 😞, tôi không hiểu! Nếu bạn cần trợ giúp"
+" khám pháp sản phẩm của chúng tôi, vui lòng kiểm tra <a "
+"href=\"https://viindoo.com/documentation\" target=\"_blank\">tài liệu của "
+"chúng tôi</a> hoặc các <a href=\"https://viindoo.com/slides\" "
+"target=\"_blank\">video của chúng tôi</a>."
 
 #. module: mail_bot
 #: model:ir.model,name:mail_bot.model_res_users
@@ -266,6 +280,9 @@ msgid ""
 "attention. <b>Try to ping me using</b> <span "
 "class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
 msgstr ""
+"Wow, bạn khá là tự nhiên!<br/>Hãy ping ai đó để gây sự chú ý của họ bằng "
+"@ten_nguoi_do. <b>Hãy thử ping tôi bằng cách gõ</b> <span "
+"class=\"o_odoobot_command\">@OdooBot</span>ở trong câu."
 
 #. module: mail_bot
 #. odoo-python
@@ -275,15 +292,15 @@ msgid ""
 "Yep, I am here! 🎉 <br/>Now, try <b>sending an attachment</b>, like a picture"
 " of your cute dog..."
 msgstr ""
-"Yep, I am here! 🎉 <br/>Now, try <b>sending an attachment</b>, like a picture"
-" of your cute dog..."
+"Yep, có tôi! 🎉 <br/>Giờ hãy thử <b>gửi một đính kèm</b>, một hình ảnh về chú"
+" cún đáng yêu của bạn chẳng hạn..."
 
 #. module: mail_bot
 #. odoo-python
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "fuck"
-msgstr "fuck"
+msgstr "đ. mệnh"
 
 #. module: mail_bot
 #. odoo-python
@@ -297,7 +314,7 @@ msgstr "giúp"
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "i love you"
-msgstr "i love you"
+msgstr "yêu bạn"
 
 #. module: mail_bot
 #. odoo-python
@@ -311,4 +328,4 @@ msgstr "love"
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "start the tour"
-msgstr "bắt đầu chuyến đi tham quan"
+msgstr "khởi động chuyến tham quan"

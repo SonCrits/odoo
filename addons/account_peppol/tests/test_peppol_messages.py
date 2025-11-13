@@ -1,14 +1,16 @@
 import json
 from base64 import b64encode
 from contextlib import contextmanager
-from freezegun import freeze_time
-from requests import Session, PreparedRequest, Response
+from urllib import parse
 
-from odoo.addons.account.tests.test_account_move_send import TestAccountMoveSendCommon
+from freezegun import freeze_time
+from requests import PreparedRequest, Response, Session
+
 from odoo.exceptions import UserError
 from odoo.tests.common import tagged
 from odoo.tools.misc import file_open
 
+from odoo.addons.account.tests.test_account_move_send import TestAccountMoveSendCommon
 
 ID_CLIENT = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 FAKE_UUID = ['yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy',
@@ -50,6 +52,7 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
         }, {
             'name': 'Molly',
             'city': 'Namur',
+            'email': 'Namur@company.com',
             'country_id': cls.env.ref('base.be').id,
             'peppol_eas': '0208',
             'peppol_endpoint': '2718281828',
@@ -94,7 +97,7 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
                 'document_type': 'Invoice',
             },
             FAKE_UUID[1]: {
-                'accounting_supplier_party': '0208:2718281828',
+                'accounting_supplier_party': '0198:dk16356706',
                 'filename': 'test_incoming',
                 'enc_key': file_open(f'{FILE_PATH}/enc_key', mode='rb').read(),
                 'document': b64encode(file_open(f'{FILE_PATH}/document', mode='rb').read()),
@@ -111,13 +114,13 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
             '/api/peppol/1/get_all_documents': {'result': {
                 'messages': [
                     {
-                        'accounting_supplier_party': '0208:2718281828',
+                        'accounting_supplier_party': '0198:dk16356706',
                         'filename': 'test_incoming.xml',
                         'uuid': FAKE_UUID[1],
                         'state': 'done',
                         'direction': 'incoming',
                         'document_type': 'Invoice',
-                        'sender': '0208:2718281828',
+                        'sender': '0198:dk16356706',
                         'receiver': '0208:0477472701',
                         'timestamp': '2022-12-30',
                         'error': False if not error else 'Test error',
@@ -138,15 +141,55 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
     def _request_handler(cls, s: Session, r: PreparedRequest, /, **kw):
         response = Response()
         response.status_code = 200
-        if r.url.endswith('iso6523-actorid-upis%3A%3A0208%3A0477472701'):
-            response._content = b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<smp:ServiceGroup xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:id="http://busdox.org/transport/identifiers/1.0/" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:smp="http://busdox.org/serviceMetadata/publishing/1.0/"><id:ParticipantIdentifier scheme="iso6523-actorid-upis">0208:0477472701</id:ParticipantIdentifier></smp:ServiceGroup>'
-            return response
-        if r.url.endswith('iso6523-actorid-upis%3A%3A0208%3A3141592654'):
-            response.status_code = 404
-            return response
-        if r.url.endswith('iso6523-actorid-upis%3A%3A0208%3A2718281828'):
-            response._content = b'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n<smp:ServiceGroup xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:id="http://busdox.org/transport/identifiers/1.0/" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:smp="http://busdox.org/serviceMetadata/publishing/1.0/"><id:ParticipantIdentifier scheme="iso6523-actorid-upis">0208:2718281828</id:ParticipantIdentifier></smp:ServiceGroup>'
-            return response
+
+        if r.path_url.startswith('/api/peppol/1/lookup'):
+            peppol_identifier = parse.parse_qs(r.path_url.rsplit('?')[1])['peppol_identifier'][0]
+            url_quoted_peppol_identifier = parse.quote_plus(peppol_identifier)
+            if peppol_identifier.endswith('0477472701'):
+                response.status_code = 200
+                response.json = lambda: {
+                    "result": {
+                        'identifier': peppol_identifier,
+                        'smp_base_url': "http://iap-services.odoo.com",
+                        'ttl': 60,
+                        'service_group_url': f'http://iap-services.odoo.com/iso6523-actorid-upis%3A%3A{url_quoted_peppol_identifier}',
+                        'services': [
+                            {
+                                "href": f"http://iap-services.odoo.com/iso6523-actorid-upis%3A%3A{url_quoted_peppol_identifier}/services/busdox-docid-qns%3A%3Aurn%3Aoasis%3Anames%3Aspecification%3Aubl%3Aschema%3Axsd%3AInvoice-2%3A%3AInvoice%23%23urn%3Acen.eu%3Aen16931%3A2017%23compliant%23urn%3Afdc%3Apeppol.eu%3A2017%3Apoacc%3Abilling%3A3.0%3A%3A2.1",
+                                "document_id": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1",
+                            },
+                        ],
+                    },
+                }
+                return response
+            if peppol_identifier.endswith('3141592654'):
+                response.status_code = 404
+                response.json = lambda: {"error": {"code": "NOT_FOUND", "message": "no naptr record", "retryable": False}}
+                return response
+            if peppol_identifier.endswith('2718281828'):
+                response.status_code = 200
+                response.json = lambda: {
+                    "result": {
+                        'identifier': peppol_identifier,
+                        'smp_base_url': "http://iap-services.odoo.com",
+                        'ttl': 60,
+                        'service_group_url': f'http://iap-services.odoo.com/iso6523-actorid-upis%3A%3A{url_quoted_peppol_identifier}',
+                        'services': [],
+                    },
+                }
+                return response
+
+            if peppol_identifier == '0198:dk16356706':
+                response.status_code = 200
+                response.json = lambda: {"result": {
+                        'identifier': peppol_identifier,
+                        'smp_base_url': "http://iap-services.odoo.com",
+                        'ttl': 60,
+                        'service_group_url': f'http://iap-services.odoo.com/iso6523-actorid-upis%3A%3A{url_quoted_peppol_identifier}',
+                        'services': [],
+                    },
+                }
+                return response
 
         proxy_documents, responses = cls._get_mock_data(cls.env.context.get('error'))
         url = r.path_url
@@ -266,6 +309,19 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
         )
         self.assertTrue(bool(move.ubl_cii_xml_id))
 
+    def test_send_peppol_and_email_default_values(self):
+        # If both "Send by Email" and "Send by Peppol" are set, we deactivate the "Send by Email" option
+        move = self.create_move(self.valid_partner)
+        move.action_post()
+
+        wizard = self.create_send_and_print(
+            move,
+            checkbox_send_peppol=True,
+        )
+
+        self.assertTrue(wizard.checkbox_send_peppol)
+        self.assertFalse(wizard.checkbox_send_mail)
+
     def test_send_invalid_edi_user(self):
         # an invalid edi user should not be able to send invoices via peppol
         self.env.company.account_peppol_proxy_state = 'rejected'
@@ -325,5 +381,27 @@ class TestPeppolMessage(TestAccountMoveSendCommon):
                 'peppol_endpoint': '0477472701',
             }])
 
+        new_partner.peppol_endpoint = '3141592654'
+        self.assertRecordValues(
+            new_partner, [{
+                'account_peppol_verification_label': 'not_valid',
+                'account_peppol_is_endpoint_valid': False,
+                'peppol_eas': '0208',
+                'peppol_endpoint': '3141592654',
+            }])
+
         new_partner.ubl_cii_format = False
         self.assertFalse(new_partner.account_peppol_is_endpoint_valid)
+
+        # the participant exists on the network but cannot receive XRechnung
+        new_partner.write({
+            'ubl_cii_format': 'xrechnung',
+            'peppol_endpoint': '0477472701',
+        })
+        self.assertRecordValues(
+            new_partner, [{
+                'account_peppol_verification_label': 'not_valid_format',
+                'account_peppol_is_endpoint_valid': False,
+                'peppol_eas': '0208',
+                'peppol_endpoint': '0477472701',
+            }])

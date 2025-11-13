@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_event_meet_quiz
-# 
+#
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. module: website_event_meet_quiz
 #: model_terms:ir.ui.view,arch_db:website_event_meet_quiz.community_leaderboard_small
 msgid "Leaderboard"
-msgstr "Bảng xếp hạng"
+msgstr "Bảng thành tích"
 
 #. module: website_event_meet_quiz
 #: model_terms:ir.ui.view,arch_db:website_event_meet_quiz.community_leaderboard_small

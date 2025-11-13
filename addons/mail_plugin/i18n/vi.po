@@ -1,9 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_plugin
-# 
+#
 # Translators:
 # Wil Odoo, 2024
+# Thi Huong Nguyen, 2025
 # 
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 12:31+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +34,8 @@ msgstr "%s nhân viên"
 msgid ""
 "Access Error: Only Internal Users can link their inboxes to this database."
 msgstr ""
+"Lỗi truy cập: Chỉ người dùng nội bộ mới có thể liên kết hộp thư đến của họ "
+"với cơ sở dữ liệu này."
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -52,7 +55,7 @@ msgstr "Địa chỉ"
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
 msgid "Allow"
-msgstr "Allow"
+msgstr "Cho phép"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -149,7 +152,7 @@ msgstr "Chi tiết về công ty"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "Company Type"
-msgstr "Loại hình Công ty"
+msgstr "Loại công ty"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -247,12 +250,12 @@ msgstr "Tạo một công ty"
 #. module: mail_plugin
 #: model:ir.model.fields,field_description:mail_plugin.field_res_partner_iap__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr "Tạo bởi"
 
 #. module: mail_plugin
 #: model:ir.model.fields,field_description:mail_plugin.field_res_partner_iap__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Tạo vào"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -278,7 +281,7 @@ msgstr "Vùng gỡ lỗi cho mục đích phát triển."
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
 msgid "Deny"
-msgstr "Deny"
+msgstr "Từ chối"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -339,7 +342,7 @@ msgstr "Năm thành lập"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "From : %(email)s"
-msgstr "Từ : %(email)s"
+msgstr "Từ: %(email)s"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -365,7 +368,7 @@ msgstr "Định tuyến HTTP"
 #: model:ir.model.fields,field_description:mail_plugin.field_res_partner_iap__iap_enrich_info
 #: model:ir.model.fields,field_description:mail_plugin.field_res_users__iap_enrich_info
 msgid "IAP Enrich Info"
-msgstr "IAP Enrich Info"
+msgstr "Thông tin chi tiết IAP"
 
 #. module: mail_plugin
 #: model:ir.actions.act_window,name:mail_plugin.res_partner_iap_action
@@ -412,7 +415,7 @@ msgstr "URL không hợp lệ"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "Keywords"
-msgstr "Các từ khóa"
+msgstr "Từ khóa"
 
 #. module: mail_plugin
 #: model:ir.model.fields,field_description:mail_plugin.field_res_partner_iap__write_uid
@@ -472,7 +475,7 @@ msgstr "Đăng xuất"
 #: code:addons/mail_plugin/controllers/mail_plugin.py:0
 #, python-format
 msgid "No Access"
-msgstr "Không truy cập"
+msgstr "Không có quyền truy cập"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -640,7 +643,7 @@ msgstr "Xem thêm"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "Refresh"
-msgstr "Refresh"
+msgstr "Làm mới"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -668,7 +671,7 @@ msgstr "Lưu trong Odoo"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "Save the contact to create the company"
-msgstr ""
+msgstr "Lưu liên hệ để tạo công ty"
 
 #. module: mail_plugin
 #. odoo-javascript
@@ -726,6 +729,8 @@ msgstr "Đã xảy ra lỗi. Hãy thử lại sau."
 #, python-format
 msgid "The email of this contact is not valid and we can not enrich it"
 msgstr ""
+"Email của liên hệ này không hợp lệ và chúng tôi không thể làm tăng cường "
+"email đó"
 
 #. module: mail_plugin
 #. odoo-python
@@ -764,6 +769,8 @@ msgid ""
 "This is your notification address. Search the Contact manually to link this "
 "email to a record."
 msgstr ""
+"Đây là địa chỉ thông báo của bạn. Hãy tìm kiếm Liên hệ theo cách thủ công để"
+" liên kết email này với một bản ghi."
 
 #. module: mail_plugin
 #. odoo-python
@@ -827,7 +834,7 @@ msgstr "Bạn cần phải chỉ định ít nhất một partner_id  hoặc t�
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
 msgid "access your Odoo database?"
-msgstr "truy cập cơ sở dữ liệu Odoo?"
+msgstr "truy cập cơ sở dữ liệu Odoo? "
 
 #. module: mail_plugin
 #. odoo-javascript
